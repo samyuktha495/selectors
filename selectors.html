@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: gainsboro;
+        }
+        .header{
+            background-color: lightseagreen;
+            color:white;
+            width:100%;
+            height:70px;
+            text-align: center;
+        }
+        nav a{
+            color:white;
+            display: inline-block;
+            text-decoration: none;
+            padding:20px;
+        }
+        nav:hover{
+            background-color: lightseagreen;
+        }
+        #profile{
+            text-align: center;
+            background-color: white;
+            color: black;
+            width:70%;
+           
+            margin-left:15%;
+            margin-top: 80px;
+        }
+        #about{
+            background-color: white;
+            height:120px;
+            width:70%;
+            margin-left:15%;
+        }
+        #about img{
+            border-radius: 50px;
+            margin-left: 5px;
+            margin-top: 0px;
+        }
+        #about p{
+            color:black;
+            margin-left: 15%;
+            top:250px;
+            position:absolute;
+           
+        }
+        #skills{
+            background-color: white;
+            width:70%;
+            margin-left:150px;
+            margin-top: 20px;
+           
+                                                                  
+            
+        }
+        #skills table{
+            border-color: white;
+            margin-left: 2px;
+        }
+        #skills h1{
+          margin-right: 90%;
+        }
+       #work{
+        background-color: white;
+        width:70%;
+        height:280px;
+        margin-left: 150px;
+       }
+       .box1{
+        background-color: lightgray;
+        width:40%;
+        margin-left:30px;
+        border-radius: 20px;
+        text-align: center;
+       }
+       .box2{
+        background-color: lightgray;
+        width:26%;
+        margin-left:350px;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 0px;
+        position: absolute;
+        top:690px;
+        
+        
+       }
+       .box3{
+        background-color: lightgray;
+        width:40%;
+        margin-left:30px;
+        border-radius: 20px;
+        text-align: center;
+       }
+       #contact{
+        height:400px;
+        width:70%;
+        margin-left: 14%;
+        margin-top: 20px;
+        background-color: white;
+       }
+       #contact h1{
+        margin-top: 0px;
+       }
+       input{
+        width:700px;
+        height:50px;
+        margin-left: 2%;
+        outline:none;
+        border:none;
+       }
+       input:hover{
+        border:2px solid white;
+        height:50px;
+        outline:auto;
+        width:700px;
+        margin-left: 2%;
+       }
+       button{
+        background-color:green;
+        height:40px;
+        border-radius: 10px;
+        width:150px;
+       }
+       textarea{
+        margin-left: 2%;
+        outline:none;
+        border:none;
+        height:50px;
+        width:700px;
+
+    }
+    textarea:hover{
+        border:2px solid white;
+        outline:auto;
+        width:700px;
+        height:50px;
+        margin-left:2%;
+    }
+    .footer{
+        background-color:lightseagreen;
+        width:100%;
+        text-align: center;
+        color:white;
+        height:50px;
+        padding:40px 0px 0px 0px;
+
+    }
+
+  </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="#profile">profile</a>
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#work">work</a>
+            <a href="#contact">contact</a>
+            
+        </nav>
+    </div>
+    <div id="profile">
+    <h1>Welcome to my portfolio</h1>
+    </div> 
+    <div id="about">
+        <h2>About me</h2>
+        <img src="https://documents.iplt20.com/ipl/IPLHeadshot2024/2.png"alt=""width="60px"height="60px">
+        <p>Hello I'm a wed developer with a passion for creating  beautiful websites</p>
+    </div>
+    <div id="skills">
+    <h2>My skills</h2>
+    <table border="1"cellspacing="0"cellpadding="20px"style="width:700px">
+        <thead>
+                <tr bgcolor="lightblue">
+                    <th>skill</th>
+                    <th>proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Expert</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>javascript</td>
+                    <td>intermediate</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="work">
+        <h2>My work</h2>
+        <div class="box1">
+            <img src="./flower.png">project1
+            <h3>project one</h3>
+            <p>description of project one</p>
+        </div>
+        <div class="box2">
+            <img src="./flower.png">project2
+            <h3>project two</h3>
+            <p>description of project two</p>
+        </div>
+        <div class="box3">
+            <img src="./flower.png">project3
+            <h3>project three</h3>
+            <p>description of project three</p>
+        </div>
+    </div>
+    <div id="contact">
+        <h2>Contact me</h2>
+        <label for="Name">Name</label>
+        <input type="text"id="Name"name=""placeholder="">
+        <br>
+        <label for="Email">Email</label>
+        <input type="text"id="Email"name=""placeholder="">
+        <br>
+        <label for="subject">Subject</label>
+        <input type="text"id="Subject"name=""placeholder="">
+        <br>
+        <label for="Message">Message</label><br>
+        <textarea name="message"id="message"placeholder=""></textarea>
+        <button type="submit">send message</button>
+    </div>
+    <div class="footer">
+        <span>@2024 my portfolio</span>
+    </div>
+
+</body>
+</html>
